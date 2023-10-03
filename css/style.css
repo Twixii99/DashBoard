@@ -1,0 +1,133 @@
+.page {
+  display: flex;
+}
+
+/* #region sidebar */
+.page aside {
+  position: sticky;
+  top: 0;
+  flex-basis: 250px;
+  box-shadow: 0 0 10px #eee;
+}
+
+.page aside h3 {
+  font-weight: normal;
+  margin-bottom: 50px;
+  text-align: center;
+
+  position: relative;
+}
+
+.page aside h3::before,
+.page aside h3::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.page aside h3::before {
+  width: 50%;
+  height: 2px;
+  left: 25%;
+  bottom: -20px;
+}
+
+.page aside h3::after {
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  border: 3px solid  white;
+  bottom: -29px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.page aside a {
+  display: block;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.page aside a:hover {
+  background-color: #f6f6f6;
+}
+
+.page aside a i {
+  margin-right: 10px;
+}
+/* #endregion */
+
+/* #region main > header */
+.page main {
+  flex: 1;
+}
+
+.page main header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #eee;
+}
+
+.page main header .search::before {
+  content: "\f002";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+.page main header .search input {
+  font-size: 13px;;
+
+  width: 160px;
+  margin-left: 5px;
+  padding-left: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+
+  transition: width 0.3s;
+}
+
+.page main header .search input::placeholder {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.page main header .search input:focus::placeholder {
+  opacity: 0;
+}
+
+.page main header .search input:focus {
+  outline: none;
+  width: 200px;
+}
+
+.page main header .icons {
+  display: flex;
+  align-items: center;
+}
+
+.page main header .icons span::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  top: -8px;
+  right: -5px;
+}
+
+.page main header .icons img {
+  width: 32px;
+  margin-left: 15px;
+}
+/* #endregion */
