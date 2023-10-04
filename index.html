@@ -16,7 +16,7 @@
     <title>DashBoard</title>
   </head>
   <body>
-    <div class="page">
+    <div class="page d-flex">
       <aside class="p-20">
         <h3>Elzero</h3>
         <ul unstyle>
@@ -71,19 +71,91 @@
         </ul>
       </aside>
       <main>
-        <header class="p-15">
-          <div class="search p-realtive">
+        <header class="p-15 d-flex">
+          <div class="search p-relative">
             <input class="p-10" type="search" placeholder="Type A Keyword">
           </div>
-          <div class="icons">
+          <div class="icons d-flex">
             <span class="notification p-realtive">
               <i class="fa-regular fa-bell fa-lg"></i>
             </span>
             <img src="images/header/avatar.png" alt="your profile image">
           </div>
         </header>
-        <div class="content">
-
+        <div class="content p-20">
+          <h1 class="p-realtive">Dashboard</h1>
+          <div class="wrapper d-grid gap-20">
+            <div class="welcome bg-white rad-10">
+              <div class="intro p-20 d-flex">
+                <div class="text">
+                  <h2 class="fw-500">Welcome</h2>
+                  <span class="d-block c-grey mt-5">Mahmoud</span>
+                </div>
+                <div class="image">
+                  <img src="images/body/welcome.png" alt="welcoming image">
+                </div>
+              </div>
+              <img src="images/header/avatar.png" alt="my photo">
+              <div class="text-content d-flex p-20">
+                <p class="name">
+                  Mahmoud Kamal
+                  <span class="d-block mt-5px c-grey">Engineer</span>
+                </p>
+                <p class="proj">
+                  43
+                  <span class="d-block mt-5px c-grey">Projects</span>
+                </p>
+                <p class="earn">
+                  $900
+                  <span class="d-block mt-5px c-grey">Earned</span>
+                </p>
+              </div>
+              <a href="profile.html" class="btn-shape c-white bg-blue d-block w-fit rad-6 fs-14">Profile</a>
+            </div>
+            <div class="draft bg-white rad-10 p-20">
+              <h2 class="fw-500">Quick Draft</h2>
+              <span class="d-block c-grey mt-10 mb-20">Write A Draft For Your Ideas</span>
+              <form action>
+                <input class="d-block bg-3e p-10 rm-border rad-6 mb-20 w-full" type="text" placeholder="Title">
+                <textarea class="d-block bg-3e p-10 rm-border rad-6 mb-20 w-full" placeholder="Your Thought"></textarea>
+                <input class="d-block btn-shape bg-blue c-white rad-6 rm-border w-fit" type="submit" value="Save">
+              </form>
+            </div>
+            <div class="targets p-20 bg-white rad-10">
+              <h2 class="fw-500">Annual Targets</h2>
+              <span class="d-block c-grey mt-10 mb-20">Targets Of The Year</span>
+              <div class="money flex-center mb-20">
+                <div class="symbol flex-center">
+                  <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+                </div>
+                <div class="flex-1">
+                  <span class="fs-14 c-grey">Money</span>
+                  <span class="mt-5 d-block ">$20.000</span>
+                  <div class="progress p-relative mt-10" percentage="80%"></div>
+                </div>
+              </div>
+              <div class="projects flex-center mb-20">
+                <div class="symbol flex-center">
+                  <i class="fa-solid fa-code fa-lg c-orange"></i>
+                </div>
+                <div class="flex-1">
+                  <span class="fs-14 c-grey">Projects</span>
+                  <span class="mt-5 d-block ">43</span>
+                  <div class="progress p-relative mt-10" percentage="55%"></div>
+                </div>
+              </div>
+              <div class="team flex-center mb-20">
+                <div class="symbol flex-center">
+                  <i class="fa-solid fa-user fa-lg c-green"></i>
+                </div>
+                <div class="flex-1">
+                  <span class="fs-14 c-grey">Team</span>
+                  <span class="mt-5 d-block ">12</span>
+                  <div class="progress p-relative mt-10" percentage="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>

@@ -15,13 +15,23 @@ body {
 }
 
 :root {
-  --main-color: #0075ff;
+  --blue-color: #0075ff;
   --grey-color: #888;
   --red-color: #f44336;
+  --orange-color: #f59E0b;
+  --green-color: #22c55e;
 }
 
 ul[unstyle] {
   list-style: none;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .p-10 {
@@ -36,10 +46,119 @@ ul[unstyle] {
   padding: 20px;
 }
 
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .rad-6 {
   border-radius: 6px;
 }
 
-.p-realtive {
+.rad-10 {
+  border-radius: 10px;
+}
+
+.p-relative {
   position: relative;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.c-white {
+  color: white;
+}
+
+.c-grey {
+  color: var(--grey-color);
+}
+
+.c-blue {
+  color: var(--blue-color);
+}
+
+.c-red {
+  color: var(--red-color);
+}
+
+.c-orange {
+  color: var(--orange-color);
+}
+
+.c-green {
+  color: var(--green-color);
+}
+
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-grey {
+  background-color: var(--grey-color);
+}
+
+.bg-3e {
+  background-color: #eee;
+}
+
+.btn-shape {
+  padding: 4px 10px;
+}
+
+.rm-border {
+  border: none;
 }
