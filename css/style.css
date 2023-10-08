@@ -31,7 +31,7 @@
   background-color: #f6f6f6;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .page aside h3 {
     font-size: 15px;
   }
@@ -41,7 +41,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .page aside {
     width: 250px;
     padding: 20px;
@@ -847,21 +847,105 @@
 /* #endregion */
 
 /* #region profile page */
-.page main .profile-wrapper {
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+@media (max-width: 991px) {
+  .page main .id-card {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.page main .profile-wrapper .id-card {
-  grid-column: 1/-1;
+.page main .id-card .user-id {
+  width: 300px;
+  border-right: 1px solid #eee;
+}
+
+@media (max-width: 991px) {
+  .page main .id-card .user-id {
+    border-right: none;
+  }
+}
+
+.page main .id-card .user-id img {
+  width: 100px;
+}
+
+.page main .id-card .user-id .progress {
+  width: 70%;
+  height: 6px;
+  margin: 0 auto 10px;
+  background-color: #ddd;
+}
+
+.page main .id-card .user-id .progress::before {
+  content: "";
+  width: 70%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  background-color: var(--blue-color);
+}
+
+@media (max-width: 767px) {
+  .page main .id-card .information .box {
+    justify-content: center;
+  }
+
+  .page main .id-card .information .box > p {
+    text-align: center;
+  }
+}
+
+.page main .id-card .information .box div {
+  min-width: 250px;
+  padding-top: 10px;
+}
+
+.page main .id-card .information > div:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.page main .id-card .information 
+.toggle-button input[type="checkbox"].toggle + label::before {
+  width: 5em;
+  height: 1.5em;
+}
+
+.page main .id-card .information 
+.toggle-button input[type="checkbox"].toggle + label::after {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.page main .id-card .information 
+.toggle-button input[type="checkbox"].toggle:checked + label::after {
+  transform: translateX(3.4em);
+}
+
+@media (max-width: 991px) {
+  .page main .profile-wrapper {
+    flex-direction: column;
+  }
+}
+
+.page main .profile-wrapper .my-skills {
+  flex: 1;
+}
+
+@media (max-width: 991px) {
+  .page main .profile-wrapper .my-skills {
+
+  }
+}
+
+.page main .profile-wrapper .actvs {
+  flex: 2;
 }
 
 .page main .profile-wrapper .my-skills div:not(:last-child) {
   border-bottom: 1px solid #eee;
-}
-
-.page main .profile-wrapper .actvs {
-  grid-column-start: 2;
-  grid-column-end: -1;
 }
 
 .page main .profile-wrapper .actvs > div:not(:last-child) {
@@ -875,5 +959,23 @@
 
 .page main .profile-wrapper .actvs .time {
   text-align: right;
+}
+
+@media (max-width: 991px) {
+  .to-col {
+    flex-direction: column;
+  }
+
+  .m-txt-center {
+    text-align: center;
+  }
+
+  .m-mt-10 {
+    margin-top: 10px;
+  }
+
+  .page main .profile-wrapper .actvs .time {
+    text-align: center;
+  }
 }
 /* #endregion */
