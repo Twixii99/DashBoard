@@ -175,6 +175,18 @@ ul[unstyle] {
   align-items: center;
 }
 
+.flex-2c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-c-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .flex-btwn {
   justify-content: space-between;
 }
@@ -189,6 +201,10 @@ ul[unstyle] {
 
 .d-grid {
   display: grid;
+}
+
+.gap-10 {
+  gap: 10px;
 }
 
 .gap-20 {
@@ -255,6 +271,23 @@ ul[unstyle] {
   background-color: #eee;
 }
 
+
+.bg-light-blue {
+  background-color: rgb(0 117 255 / 20%);
+}
+
+.bg-light-green {
+  background-color: rgb(34 197 94 / 20%);
+}
+
+.bg-light-red {
+  background-color: rgb(244 67 54 / 20%);
+}
+
+.bg-light-orange {
+  background-color: rgb(245 158 11 / 20%);
+}
+
 .btn-shape {
   padding: 4px 10px;
 }
@@ -317,3 +350,21 @@ ul[unstyle] {
   transform: translateX(2.9em);
 }
 /* #endregion */
+
+@media (max-width: 991px) {
+  .to-col {
+    flex-direction: column;
+  }
+
+  .m-txt-center {
+    text-align: center;
+  }
+
+  .m-mt-10 {
+    margin-top: 10px;
+  }
+
+  .page main .profile-wrapper .actvs .time {
+    text-align: center;
+  }
+}
